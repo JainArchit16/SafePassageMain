@@ -99,10 +99,15 @@ const Scan = () => {
       if (1) {
         if (imageFile) {
           console.log(userData);
+
+          const currentDate = new Date();
+          const formattedDate = currentDate.toLocaleDateString("en-US");
+          const formattedTime = currentDate.toLocaleTimeString("en-US");
+
           const PARAMS = {
             email: emaily,
-            date: Date.now(),
-            time: Date.now(),
+            date: formattedDate,
+            time: formattedTime,
             carNumber: userData?.carNumb,
             carModel: userData?.model,
             latitude: location.latitude,
