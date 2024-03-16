@@ -100,7 +100,7 @@ const Scan = () => {
         if (imageFile) {
           console.log(userData);
           const PARAMS = {
-            to_mail: emaily,
+            email: emaily,
             date: Date.now(),
             time: Date.now(),
             carNumber: userData?.carNumb,
