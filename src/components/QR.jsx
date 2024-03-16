@@ -8,7 +8,7 @@ const QR = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setQRvalue("http://172.16.165.158:3000/scan/" + text);
+    setQRvalue("https://safe-passage.vercel.app/scan/" + text);
   };
 
   return (
